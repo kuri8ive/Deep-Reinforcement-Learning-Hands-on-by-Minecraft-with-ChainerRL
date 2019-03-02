@@ -1,11 +1,12 @@
 # Deep-Reinforcement-Learning-Hands-on-by-Minecraft-with-ChainerRL
 
 
+
 ## Minecraft
 
 Do you know Minecraft? 
 
-[PR movie](https://youtu.be/MmB9b5njVbA)
+[![PR movie](https://img.youtube.com/vi/MmB9b5njVbA/0.jpg)](https://www.youtube.com/watch?v=MmB9b5njVbA)
 
 [Official Wiki](https://minecraft.gamepedia.com/Minecraft_Wiki) says as belows:
 
@@ -26,6 +27,13 @@ This time you use a Minecraft environment called [marLo](https://github.com/crow
 You can easily use a reinforcement learning framework such as ChainerRL because marLo is compatible with [OpenAI's Gym](https://github.com/openai/gym)(although it is not complete ... for example wrapper used for saving movies cannot be used).
 
 MarLo has some environments as follows. For example, you can make an AI walking on a single road on lava with deep reinforcement learning. Now you learn with `MarLo-FindTheGoal-v0` environment, and then you try assignments.
+
+| `MarLo-MazeRunner-v0`![Alt text](https://camo.qiitausercontent.com/19c8cc6ab8297d62c787c0b5ab41859b810685b6/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f753435664e517847353977666e52707a774a2f67697068792e676966) | `MarLo-CliffWalking-v0`![Alt text](https://camo.qiitausercontent.com/a1835ac77773d3bc0d668bc35747d133dfd0afbb/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f6566346c50474e71614c6c4b7234357257422f67697068792e676966) | `MarLo-CatchTheMob-v0`![Alt text](https://camo.qiitausercontent.com/54f211227c0e9b47979a9c78a8638fed2041eda7/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f39413167485a72576361533441597a6349552f67697068792e676966) | `MarLo-FindTheGoal-v0`![Alt text](https://camo.qiitausercontent.com/66ae6f6fc759a2ada4198cb45275597d5da96ad3/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f3167576b51624473484f666f346b5a585a762f67697068792e676966) |
+| :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
+| `MarLo-Attic-v0`![Alt text](https://camo.qiitausercontent.com/96c3cf42cd5342972f1b99b8c3e085ec8f19836c/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f34374337415942334641366b67724d6951332f67697068792e676966) | `MarLo-DefaultFlatWorld-v0`![Alt text](https://camo.qiitausercontent.com/ce615eddc9c3c7af3dab8fae20762ca85646dc30/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f4c307339515875523676494a6836413064712f67697068792e676966) | `MarLo-DefaultWorld-v0`![Alt text](https://camo.qiitausercontent.com/8ac767a629ef5f6a1f78e80724819e123fd68e72/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f344e78376759694d394e44724d724d616f372f67697068792e676966) | `MarLo-Eating-v0`![Alt text](https://camo.qiitausercontent.com/6feb3c4dff76239afac2a1ebd112c9ea0dc9dfab/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f704f624e4d6a6a66634749357456686d58362f67697068792e676966) |
+| `MarLo-Obstacles-v0`![Alt text](https://camo.qiitausercontent.com/5579a7467bf3424ed4f8c60f6e9cad20c769abaf/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f3573596d46466b713761454d4b54624b50342f67697068792e676966) | `MarLo-TrickyArena-v0`![Alt text](https://camo.qiitausercontent.com/9736b6d4e10198781bf4191dee9c629fcc54de94/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f316731627877326e44334739667a325756562f67697068792e676966) |                                                              |                                                              |
+
+
 
 ## Hands-on content
 
@@ -196,6 +204,8 @@ Please go to `http://your vm IP:6080` and enter your own password `$ {VNC_PW}`.
 
 You should be able to connect to the remote environment via a VNC connection and check that Minecraft will start in that!
 
+![Alt text](https://camo.qiitausercontent.com/139d52656017fb5c02d572e7e639ddad91a16f9f/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f3131313438322f62396134646133312d646335362d643465392d383766302d3631393732326261356235632e706e67)
+
 
 
 ## Let's start hands-on
@@ -232,6 +242,8 @@ $ python test_malmo.py
 ```
 
 After waiting for a while, you should see a screen like this.
+
+![Alt text](https://camo.qiitausercontent.com/12fd5158c49f40bbe72cc7700033892e4bd1bafa/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f3131313438322f38313138333961352d353561642d396163642d303461382d3865623036636566326663372e706e67)
 
 The above command executes the following python script.
 
@@ -432,3 +444,7 @@ And there is a [paper](https://arxiv.org/pdf/1710.02298.pdf) which evaluated per
 
 - use PrioritizedReplayBuffer
 - use DDQN
+
+------
+
+This tutorial is a English version of [original hands-on in japanese](https://qiita.com/keisuke-umezawa/items/fcf5d00474e244217a5e) (Allowed by the author).
