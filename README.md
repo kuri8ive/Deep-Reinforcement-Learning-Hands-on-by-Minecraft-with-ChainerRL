@@ -192,6 +192,17 @@ $ conda config --set always_yes yes \
 && pip install chainer==5.1.0 cupy-cuda92==5.1.0 chainerrl==0.5.0
 ```
 
+Please install the appropriate cupy and chainer depending on the currently installed version of cuda.   
+(e.g. cuda 9.0 -> `cupy-cuda90`)
+
+```bash
+$ nvcc --version
+```
+
+```bash
+$ pip install chainer==5.1.0 cupy-cuda90==5.1.0 chainerrl==0.5.0
+```
+
 ### 8. Starting Minecraft client with Docker
 
 ```bash
